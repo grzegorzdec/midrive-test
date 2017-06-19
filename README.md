@@ -12,8 +12,8 @@ This repo contains the data and brief descriptions for completing a miDrive tech
 - Provided detailed installation / setup instructions with your solutions
 
 ## Exercises
-- [Front End](front-end.md)
-- [Back End](back-end.md)
+- [Front End](exercises/front-end.md)
+- [Back End](exercises/back-end.md)
 - Full Stack (Coming Soon)
 - iOS (Coming Soon)
 - Android (Coming Soon)
