@@ -1,9 +1,12 @@
-# miDrive Front End Exercise
+# miDrive Full Stack Exercise
 
-Build a simple web interface to display the data in the `data.json` file in the root of this repository.
+Build a simple REST API to serve the data contained within the `data.json` file in the root of this repository and an interface to display it.
 
-At miDrive we use the following technologies to build our frontend systems.
+At miDrive we use the following technologies to build our systems.
 
+- NodeJS
+- PostgreSQL
+- Express
 - React
 - Redux
 - Webpack
@@ -22,15 +25,13 @@ Below is a outline of the properties present on each lesson object.
 |route     |GeoJSON    |GeoJSON representation of the route driven on a lesson|
 
 ## Spec
-Include the `data.json` file directly in your project. You don't need to use a database.
+Implement an endpoint to fetch all the lessons and an interface to display the lesson data in a sensible format. Use your experience and creativity to guide your design process.
 
-Your interface should display the lesson data in a sensible format. Use your experience and creativity to guide your design process.
+### `GET` /lessons
+Retrieve a list of all lessons with routes omitted
 
-**Some nice to have features**
-- Display lesson route information on a map
-- Filtering options
-
-If you have any other ideas for features feel free to add them.
+If you still have time or have some ideas of your own, add them in as well.
 
 ## Submission
+
 Submit via private repo or project archive.

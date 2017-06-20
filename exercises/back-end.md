@@ -36,4 +36,4 @@ If you still have time or have some ideas of your own, add them in as well.
 
 ## Submission
 
-Submission instructions will be sent to candidates with the link to this repository.
+Submit via private repo or project archive.

@@ -14,6 +14,6 @@ This repo contains the data and brief descriptions for completing a miDrive tech
 ## Exercises
 - [Front End](exercises/front-end.md)
 - [Back End](exercises/back-end.md)
-- Full Stack (Coming Soon)
+- [Full Stack](exercises/full-stack.md)
 - iOS (Coming Soon)
 - Android (Coming Soon)
