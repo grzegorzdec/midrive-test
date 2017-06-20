@@ -33,4 +33,4 @@ Your interface should display the lesson data in a sensible format. Use your exp
 If you have any other ideas for features feel free to add them.
 
 ## Submission
-Submission instructions will be sent to candidates with the link to this repository.
+Submit via private repo or project archive.
