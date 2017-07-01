@@ -11,7 +11,7 @@ This repo contains the data and brief descriptions for completing a miDrive tech
 - Exercises will be assessed using macOS or a Linux system so please ensure your code can be compiled / run
 - Provided detailed installation / setup instructions with your solutions
 
-## Exercises
+## Exercises (only complete one)
 - [Front End](exercises/front-end.md)
 - [Back End](exercises/back-end.md)
 - [Full Stack](exercises/full-stack.md)
