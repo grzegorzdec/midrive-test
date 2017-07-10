@@ -27,6 +27,10 @@ Below is a outline of the properties present on each lesson object.
 ## Spec
 Implement an endpoint to fetch all the lessons and an interface to display the lesson data in a sensible format. Use your experience and creativity to guide your design process.
 
+**Some nice to have features**
+- Display lesson route information on a map
+- Filtering options
+
 ### `GET` /lessons
 Retrieve a list of all lessons with routes omitted
 
