@@ -25,14 +25,16 @@ Below is a outline of the properties present on each lesson object.
 |route     |GeoJSON    |GeoJSON representation of the route driven on a lesson|
 
 ## Spec
-Implement an endpoint to fetch all the lessons and an interface to display the lesson data in a sensible format. Use your experience and creativity to guide your design process.
+Implement the endpoints below to fetch all the lessons and build an interface to display the lesson data in a sensible format. Use your experience and creativity to guide your design process.
 
-**Some nice to have features**
+**Required features**
 - Display lesson route information on a map
-- Filtering options
+- Lesson status filtering options
 
 ### `GET` /lessons
 Retrieve a list of all lessons with routes omitted
+### `GET` /lessons/:status
+Retrieve a list of all lessons with a specific status
 
 If you still have time or have some ideas of your own, add them in as well.
 
