@@ -36,7 +36,7 @@ Retrieve a list of all lessons with routes omitted
 ### `GET` /lessons/:status
 Retrieve a list of all lessons with a specific status
 
-If you still have time or have some ideas of your own, add them in as well.
+If you still have time or have some ideas of your own, add them in as well. We'd love to see some unit tests!
 
 ## Submission
 
