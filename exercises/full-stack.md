@@ -1,6 +1,6 @@
 # miDrive Full Stack Exercise
 
-Build a simple REST API to serve the data contained within the `data.json` file in the root of this repository and an interface to display it.
+In 3 hours, build a simple REST API to serve the data contained within the `data.json` file in the root of this repository and an interface to display it.
 
 At miDrive we use the following technologies to build our systems.
 
