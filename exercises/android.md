@@ -22,6 +22,7 @@ To achieve this, you will need to:
 ### Bonus
 
 - Pull to refresh on the list of lessons
+- Split the lessons into `Previous` and `Upcoming`
 
 If a lesson is tapped on, send the user to a screen which displays the lesson in greater detail.
 
