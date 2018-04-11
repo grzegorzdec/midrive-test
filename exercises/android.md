@@ -10,8 +10,8 @@ Username: `dev+techtest@midrive.com`
 
 Password: `techtest1234`
 
-## Specification
-Once the learner logs in, they should be brought to a screen which shows all of their driving lessons.
+## The Test
+After login, we would like you to bring the user to a screen which shows all of their driving lessons.
 
 To achieve this, you will need to:
 - Send a GET request to `https://midrive-api-staging.herokuapp.com/learner/lessons`. This will return an array of lessons for that learner.
