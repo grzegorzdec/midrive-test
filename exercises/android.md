@@ -15,6 +15,8 @@ To achieve this, you will need to:
 
 ### Bonus
 
+- Pull to refresh on the list of lessons
+
 If you have time, if a lesson is tapped on, send the user to a screen which displays the lesson in greater detail.
 
 If the lesson status is incomplete:
