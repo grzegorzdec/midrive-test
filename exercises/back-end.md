@@ -1,8 +1,8 @@
-# miDrive Back End Exercise
+# Midrive Back End Exercise
 
 Build a simple REST API to serve the data contained within the `data.json` file in the root of this repository.
 
-At miDrive we use the following technologies to build our backend systems.
+At Midrive we use the following technologies to build our backend systems.
 
 - NodeJS
 - PostgreSQL
