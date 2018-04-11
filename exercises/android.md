@@ -5,7 +5,9 @@ In the root of this repo you will find an Android folder, which contains a bareb
 The app is using [Retrofit](https://square.github.io/retrofit/) for networking and [Realm](https://realm.io/docs/java/latest/) for data storage.
 
 You can log in with:
+
 Username: `dev+techtest@midrive.com`
+
 Password: `techtest1234`
 
 ## Specification
