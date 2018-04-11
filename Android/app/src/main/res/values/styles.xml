@@ -1,0 +1,304 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@android:color/white</item>
+        <item name="colorAccent">@color/primaryBlue</item>
+        <item name="android:windowBackground">@color/secondaryGrey1</item>
+        <item name="android:colorBackground">@color/secondaryGrey1</item>
+        <item name="android:textColorPrimary">@color/primaryNavy</item>
+        <item name="android:textColorSecondary">@color/primaryNavy</item>
+    </style>
+
+    <style name="AppTheme.Dark" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/secondaryNavy1</item>
+        <item name="colorPrimaryDark">@color/secondaryNavy1</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:windowBackground">@color/primaryNavy</item>
+        <item name="android:colorBackground">@color/primaryNavy</item>
+        <item name="android:textAppearanceMedium">@style/Text</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:textAppearanceSmall">@style/Text.Small1</item>
+    </style>
+
+    <style name="AppTheme.Splash" parent="AppTheme">
+        <item name="colorPrimary">@color/primaryBlue</item>
+        <item name="colorPrimaryDark">@color/primaryBlue</item>
+        <item name="colorAccent">@color/primaryBlue</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/primaryBlue</item>
+        <item name="android:colorBackground">@color/primaryBlue</item>
+    </style>
+
+    <style name="AppTheme.Welcome">
+
+    </style>
+
+    <style name="Space" />
+
+    <style name="Space.Horizontal">
+        <item name="android:layout_width">@dimen/padding</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Space.Horizontal.Fill">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Space.Horizontal.Fill.MinWidth">
+        <item name="android:minWidth">@dimen/padding</item>
+    </style>
+
+    <style name="Space.Horizontal.Quarter">
+        <item name="android:layout_width">@dimen/padding_quarter</item>
+    </style>
+
+    <style name="Space.Horizontal.Half">
+        <item name="android:layout_width">@dimen/padding_half</item>
+    </style>
+
+    <style name="Space.Horizontal.Double">
+        <item name="android:layout_width">@dimen/padding_double</item>
+    </style>
+
+    <style name="Space.Vertical">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/padding</item>
+    </style>
+
+    <style name="Space.Vertical.Quarter">
+        <item name="android:layout_height">@dimen/padding_quarter</item>
+    </style>
+
+    <style name="Space.Vertical.30">
+        <item name="android:layout_height">@dimen/padding_30</item>
+    </style>
+
+    <style name="Space.Vertical.Half">
+        <item name="android:layout_height">@dimen/padding_half</item>
+    </style>
+
+    <style name="Space.Vertical.Double">
+        <item name="android:layout_height">@dimen/padding_double</item>
+    </style>
+
+    <style name="Text" parent="Base.TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">@dimen/fontBody</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="Text.H7" parent="Text">
+        <item name="android:textSize">@dimen/fontH7</item>
+    </style>
+
+    <style name="Text.H6" parent="Text">
+        <item name="android:textSize">@dimen/fontH6</item>
+    </style>
+
+    <style name="Text.H5" parent="Text">
+        <item name="android:textSize">@dimen/fontH5</item>
+        <item name="fontPath">fonts/gt-walsheim-medium.ttf</item>
+    </style>
+
+    <style name="Text.H4" parent="Text">
+        <item name="android:textSize">@dimen/fontH3</item>
+        <item name="fontPath">fonts/gt-walsheim-medium.ttf</item>
+    </style>
+
+    <style name="Text.H3">
+        <item name="android:textSize">@dimen/fontH3</item>
+    </style>
+
+    <style name="Text.H2">
+        <item name="android:textSize">@dimen/fontH2</item>
+        <item name="fontPath">fonts/gt-walsheim-medium.ttf</item>
+    </style>
+
+    <style name="Text.H1">
+        <item name="android:textSize">@dimen/fontH1</item>
+    </style>
+
+    <style name="Text.Body2">
+        <item name="android:textSize">@dimen/fontBody</item>
+    </style>
+
+    <style name="Text.Body1">
+        <item name="android:textSize">@dimen/fontBody</item>
+        <item name="fontPath">fonts/gt-walsheim-light.ttf</item>
+    </style>
+
+    <style name="Text.Small2">
+        <item name="android:textSize">@dimen/fontSmall</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Text.Small1">
+        <item name="android:textSize">@dimen/fontSmall</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Text.Tiny1">
+        <item name="android:textSize">@dimen/fontTiny1</item>
+        <item name="fontPath">fonts/gt-walsheim-light.ttf</item>
+    </style>
+
+    <style name="Text.Secondary" parent="Text.Small2">
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Text.Header" parent="Text.Secondary">
+        <item name="android:paddingLeft">@dimen/padding</item>
+        <item name="android:paddingRight">@dimen/padding</item>
+        <item name="android:paddingTop">@dimen/padding_double</item>
+        <item name="android:paddingBottom">@dimen/padding_half</item>
+    </style>
+
+    <style name="Text.Header.NoPadding">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="Button.DialogFragment">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+    </style>
+
+    <style name="ProgressDialogTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowAnimationStyle">@style/MyAnimation.Window</item>
+        <item name="android:windowNoTitle">false</item>
+    </style>
+
+    <style name="MyAnimation.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="FrameLayout" />
+
+    <style name="FrameLayout.Reveal">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="FrameLayout.Reveal.Background" parent="FrameLayout.Reveal">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/secondaryGrey2</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="Button.Reveal" parent="Text.Small2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:enabled">false</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ToolbarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+    </style>
+
+    <style name="List">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:divider">@drawable/list_divider</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ListRow">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/generic_menu_row_height</item>
+        <item name="android:paddingLeft">@dimen/padding</item>
+        <item name="android:paddingRight">@dimen/padding</item>
+    </style>
+
+    <style name="ListRow.CarInfo">
+        <item name="android:layout_height">@dimen/generic_menu_row_height</item>
+    </style>
+
+    <style name="ListRow.TextInput" parent="ListRow">
+        <item name="android:paddingTop">@dimen/padding_half</item>
+        <item name="android:paddingBottom">@dimen/padding_half</item>
+        <item name="android:layout_height">@dimen/generic_menu_row_height_edit</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ListRow.TextInput.EditText">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/generic_menu_row_height</item>
+        <item name="android:background">@null</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="ToolbarTheme">
+        <!-- android:textColorPrimary is the color of the title text in the Toolbar  -->
+        <item name="android:textColorPrimary">@color/primaryNavy</item>
+        <!-- actionMenuTextColor is the color of the text of action (menu) items  -->
+        <item name="actionMenuTextColor">@color/primaryNavy</item>
+        <!-- Tints the input fields like checkboxes and text fields -->
+        <item name="colorAccent">@color/primaryNavy</item>
+        <item name="selectableItemBackground">?android:selectableItemBackground</item>
+        <item name="selectableItemBackgroundBorderless">?android:selectableItemBackground</item>
+    </style>
+
+    <style name="ToolbarTheme.Dark" parent="ToolbarTheme">
+        <!-- android:textColorPrimary is the color of the title text in the Toolbar  -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!-- actionMenuTextColor is the color of the text of action (menu) items  -->
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <!-- Tints the input fields like checkboxes and text fields -->
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+
+    <style name="List.Account">
+        <item name="android:divider">@drawable/list_divider_account</item>
+    </style>
+
+    <style name="ListRow.Selectable">
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="List.Row.TextView.Key" parent="Text.H1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">@dimen/padding</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="List.Row.TextView" parent="Text.H1">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+</resources>

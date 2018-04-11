@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/primaryBlue</color>
+
+    <color name="primaryNavy">#012138</color>
+    <color name="secondaryNavy1">#001824</color>
+    <color name="secondaryNavy2">#0B3755</color>
+    <color name="primaryBlue">#047BCD</color>
+    <color name="secondaryGrey1">#F0F4F7</color>
+    <color name="secondaryGrey2">#C3CCD3</color>
+    <color name="secondaryGrey2_30">#4dc3ccd3</color>
+    <color name="secondaryGrey3">#879AA8</color>
+    <color name="accent1">#50E7FF</color>
+    <color name="accent2">#FF697F</color>
+    <color name="accent3">#3FF7A5</color>
+    <color name="cameraBackground">#3a4147</color>
+</resources>

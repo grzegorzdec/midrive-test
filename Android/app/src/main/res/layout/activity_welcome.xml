@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.WelcomeActivity">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/welcome_pattern" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/flContainer"
+                android:padding="@dimen/padding">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lavAnimation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="midrive-learner-logo.json"
+                    app:lottie_loop="false" />
+
+                <TextView
+                    style="@style/Text.H1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/lavAnimation"
+                    android:gravity="center"
+                    android:padding="@dimen/padding"
+                    android:text="@string/welcome_copy" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/flContainer"
+                style="@style/FrameLayout.Reveal.Background"
+                android:layout_alignParentBottom="true">
+
+                <io.codetail.widget.RevealFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:id="@+id/flReveal"
+                        style="@style/FrameLayout.Reveal" />
+
+                </io.codetail.widget.RevealFrameLayout>
+
+                <Button
+                    android:id="@+id/bContinue"
+                    style="@style/Button.Reveal"
+                    android:onClick="submit"
+                    android:text="@string/lets_go" />
+
+            </FrameLayout>
+        </RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

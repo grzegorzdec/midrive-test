@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "267382841735",
+    "firebase_url": "https://midrive-learner-175714.firebaseio.com",
+    "project_id": "midrive-learner-175714",
+    "storage_bucket": "midrive-learner-175714.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267382841735:android:a38375d77a4aeaa9",
+        "android_client_info": {
+          "package_name": "com.midrive.learner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267382841735-33bd6lvdub8dk6ettuo494afe6ulq1ns.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.midrive.learner",
+            "certificate_hash": "385d30dc68b5cd6e6e319a25eaef48c08e3b61a7"
+          }
+        },
+        {
+          "client_id": "267382841735-b1ehobfrbflj1c981cp3uqlj7m5cdlsi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGm29AOZGhO1oniGM_t60azLjI7P5306M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267382841735-b1ehobfrbflj1c981cp3uqlj7m5cdlsi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267382841735:android:377346397bcd2beb",
+        "android_client_info": {
+          "package_name": "com.midrive.learnerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267382841735-b1ehobfrbflj1c981cp3uqlj7m5cdlsi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGm29AOZGhO1oniGM_t60azLjI7P5306M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

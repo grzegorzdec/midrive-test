@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@android:color/white</item>
+        <item name="colorAccent">@color/primaryBlue</item>
+        <item name="android:windowBackground">@color/secondaryGrey1</item>
+        <item name="android:colorBackground">@color/secondaryGrey1</item>
+        <item name="android:textColorPrimary">@color/primaryNavy</item>
+        <item name="android:textColorSecondary">@color/primaryNavy</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="AppTheme.Dark" parent="AppTheme">
+        <item name="colorPrimary">@color/secondaryNavy1</item>
+        <item name="colorPrimaryDark">@color/secondaryNavy1</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:windowBackground">@color/primaryNavy</item>
+        <item name="android:colorBackground">@color/primaryNavy</item>
+        <item name="android:textAppearanceMedium">@style/Text</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:textAppearanceSmall">@style/Text.Small1</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+</resources>

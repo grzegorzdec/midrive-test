@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.LoginActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                style="@style/ToolbarStyle"
+                android:theme="@style/ToolbarTheme"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <ScrollView
+                android:id="@+id/svScroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/flButton">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding_double"
+                    android:paddingBottom="@dimen/padding_double">
+
+                    <LinearLayout style="@style/List">
+
+                        <com.midrive.learnerapp.view.ErrorTextInputLayout
+                            android:id="@+id/tilEmail"
+                            style="@style/ListRow.TextInput">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/etEmail"
+                                style="@style/ListRow.TextInput.EditText"
+                                android:hint="@string/email_address"
+                                android:inputType="textEmailAddress" />
+                        </com.midrive.learnerapp.view.ErrorTextInputLayout>
+
+                        <com.midrive.learnerapp.view.ErrorTextInputLayout
+                            android:id="@+id/tilPassword"
+                            style="@style/ListRow.TextInput"
+                            app:passwordToggleEnabled="true">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/etPassword"
+                                style="@style/ListRow.TextInput.EditText"
+                                android:hint="@string/password" />
+                        </com.midrive.learnerapp.view.ErrorTextInputLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </ScrollView>
+
+            <FrameLayout
+                android:id="@+id/flButton"
+                style="@style/FrameLayout.Reveal.Background"
+                android:layout_alignParentBottom="true">
+
+                <io.codetail.widget.RevealFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:id="@+id/flReveal"
+                        style="@style/FrameLayout.Reveal" />
+
+                </io.codetail.widget.RevealFrameLayout>
+
+                <Button
+                    android:id="@+id/bContinue"
+                    style="@style/Button.Reveal"
+                    android:onClick="submit"
+                    android:text="@string/login" />
+
+            </FrameLayout>
+        </RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</layout>
