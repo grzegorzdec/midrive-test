@@ -18,11 +18,10 @@ To achieve this, you will need to:
 - Store those lessons in Realm.
 - Display all the lessons in a sensible format which shows the start date, start time, duration and status of the lesson.
 - Add some style to this screen using your previous experience and creativity to guide you. There is a `colors.xml` file which contains all the Midrive style colours.
-
-### Bonus
-
 - Pull to refresh on the list of lessons
 - Split the lessons into `Previous` and `Upcoming`
+
+### Bonus
 
 If a lesson is tapped on, send the user to a screen which displays the lesson in greater detail.
 
