@@ -14,7 +14,7 @@ Password: `techtest1234`
 After login, we would like you to bring the user to a screen which shows all of their driving lessons.
 
 To achieve this, you will need to:
-- Send a GET request to `https://midrive-api-staging.herokuapp.com/learner/lessons`. This will return an array of lessons for that learner.
+- Send a GET request to `https://midrive-api-staging.herokuapp.com/learner/lesson`. This will return an array of lessons for that learner.
 - Store those lessons in Realm.
 - Display all the lessons in a sensible format which shows the start date, start time, duration and status of the lesson.
 - Add some style to this screen using your previous experience and creativity to guide you. There is a `colors.xml` file which contains all the Midrive style colours.
