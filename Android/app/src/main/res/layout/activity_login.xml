@@ -50,6 +50,7 @@
                                 android:id="@+id/etEmail"
                                 style="@style/ListRow.TextInput.EditText"
                                 android:hint="@string/email_address"
+                                android:text="dev+techtest@midrive.com"
                                 android:inputType="textEmailAddress" />
                         </com.midrive.learnerapp.view.ErrorTextInputLayout>
 
@@ -61,7 +62,8 @@
                             <android.support.design.widget.TextInputEditText
                                 android:id="@+id/etPassword"
                                 style="@style/ListRow.TextInput.EditText"
-                                android:hint="@string/password" />
+                                android:hint="@string/password"
+                                android:text="techtest1234"/>
                         </com.midrive.learnerapp.view.ErrorTextInputLayout>
                     </LinearLayout>
                 </LinearLayout>

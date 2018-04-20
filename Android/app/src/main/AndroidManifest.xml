@@ -82,6 +82,7 @@
         <activity
             android:name="com.midrive.learnerapp.activity.LoginActivity"
             android:screenOrientation="portrait" />
+        <activity android:name=".activity.lesson.LessonsActivity" />
     </application>
 
 </manifest>

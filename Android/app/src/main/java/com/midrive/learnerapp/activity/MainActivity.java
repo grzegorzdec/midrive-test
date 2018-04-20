@@ -7,12 +7,14 @@ import android.os.Bundle;
 import com.midrive.learnerapp.R;
 import com.midrive.learnerapp.databinding.ActivityMainBinding;
 import com.midrive.learnerapp.model.User;
+import com.midrive.learnerapp.navigator.Navigator;
 
 public class MainActivity extends BaseActivity {
 
     private static final int SPLASH_DURATION = 2000;
 
     private ActivityMainBinding mBinding;
+    private Navigator navigator = new Navigator(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +42,6 @@ public class MainActivity extends BaseActivity {
     }
 
     private void goToDashboardActivity() {
-        // TODO: Go to lesson list screen
+        navigator.showLessons();
     }
 }

@@ -9,11 +9,13 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.midrive.learnerapp.R;
+import com.midrive.learnerapp.api.ApiError;
 import com.midrive.learnerapp.api.ApiHelper;
 import com.midrive.learnerapp.databinding.ActivityLoginBinding;
 import com.midrive.learnerapp.helper.RevealButtonHelper;
 import com.midrive.learnerapp.model.Login;
 import com.midrive.learnerapp.model.User;
+import com.midrive.learnerapp.navigator.Navigator;
 import com.midrive.learnerapp.view.ErrorTextInputLayout;
 import com.mobsandgeeks.saripaar.Validator;
 import com.mobsandgeeks.saripaar.annotation.NotEmpty;
@@ -33,6 +35,7 @@ public class LoginActivity extends BaseActivity
     private EditText etPassword;
 
     private Validator mValidator;
+    private Navigator navigator = new Navigator(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,7 +79,12 @@ public class LoginActivity extends BaseActivity
                 .subscribe(new Consumer<User>() {
                     @Override
                     public void accept(User user) throws Exception {
-                        goToNextActivity();
+                        ApiHelper.downloadLessons(mRealm, new ApiHelper.onResponse() {
+                            @Override
+                            public void onCompleate() {
+                                goToNextActivity();
+                            }
+                        });
                     }
                 }, new Consumer<Throwable>() {
                     @Override
@@ -87,7 +95,7 @@ public class LoginActivity extends BaseActivity
     }
 
     private void goToNextActivity() {
-        // TODO: Go to lesson list screen
         hideSpinner();
+        navigator.showLessons();
     }
 }
