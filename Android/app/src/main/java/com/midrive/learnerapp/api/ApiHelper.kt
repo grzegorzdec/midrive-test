@@ -9,6 +9,8 @@ import com.midrive.learnerapp.activity.MainActivity
 import com.midrive.learnerapp.model.Lesson
 import com.midrive.learnerapp.model.Login
 import com.midrive.learnerapp.model.User
+import com.midrive.learnerapp.repository.RealmRepository
+import com.midrive.learnerapp.repository.Repository
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.android.schedulers.AndroidSchedulers.mainThread
@@ -46,11 +48,11 @@ object ApiHelper {
     }
 
     @JvmStatic
-    fun downloadLessons(realm: Realm, callback: onResponse) {
+    fun downloadLessons(repository: Repository, callback: onResponse) {
         Api.getApi().lessons.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe { lessons ->
-                    handleLessons(realm, callback, lessons)
+                    handleLessons(repository, callback, lessons)
                 }
     }
 
@@ -71,10 +73,8 @@ object ApiHelper {
         }
     }
 
-    private fun handleLessons(realm: Realm,callback: onResponse, lessons: List<Lesson>) {
-        realm.beginTransaction()
-        realm.copyToRealmOrUpdate(lessons)
-        realm.commitTransaction()
+    private fun handleLessons(repository: Repository,callback: onResponse, lessons: List<Lesson>) {
+        repository.updateLessons(lessons)
         callback.onCompleate()
     }
 

@@ -10,63 +10,94 @@
             type="com.midrive.learnerapp.activity.lesson.LessonViewModel"/>
     </data>
 
-
-    <android.support.constraint.ConstraintLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:background="@drawable/list_item_background">
+        android:padding="8dp">
 
-        <android.support.v7.widget.AppCompatImageView
-            android:id="@+id/status_icon"
-            android:layout_width="wrap_content"
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/event_incomplete"/>
+            android:background="@drawable/list_item_background"
+            android:padding="8dp">
 
-        <TextView
-            android:id="@+id/date"
-            style="@style/Text.H1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="@{viewModel.date}"
-            android:textColor="@color/secondaryGrey1"
-            app:layout_constraintStart_toEndOf="@+id/status_icon"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="Tue 20 Dec"/>
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/status_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@{viewModel.statusDrawable}"
+                tools:src="@drawable/event_incomplete"/>
 
-        <TextView
-            android:id="@+id/time"
-            style="@style/Text.Body1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="4dp"
-            android:alpha="0.7"
-            android:text="@{viewModel.time}"
-            android:textColor="@color/secondaryGrey1"
-            app:layout_constraintStart_toEndOf="@+id/status_icon"
-            app:layout_constraintTop_toBottomOf="@+id/date"
-            tools:text="at 21:21"/>
+            <TextView
+                android:id="@+id/status_text"
+                style="@style/Text.H1"
+                android:textColor="@color/secondaryGrey2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@{viewModel.status}"
+                app:layout_constraintStart_toEndOf="@+id/date"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="complete"/>
 
-        <TextView
-            android:id="@+id/hours_number"
-            style="@style/Text.H1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="8dp"
-            android:textColor="@color/secondaryGrey1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="1"/>
+            <TextView
+                android:id="@+id/date"
+                style="@style/Text.H1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@{viewModel.date}"
+                android:textColor="@color/secondaryGrey1"
+                app:layout_constraintStart_toEndOf="@+id/status_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Tue 20 Dec"/>
 
+            <TextView
+                android:id="@+id/time"
+                style="@style/Text.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:alpha="0.7"
+                android:text="@{viewModel.time}"
+                android:textColor="@color/secondaryGrey1"
+                app:layout_constraintStart_toEndOf="@+id/status_icon"
+                app:layout_constraintTop_toBottomOf="@+id/date"
+                tools:text="at 21:21"/>
 
-    </android.support.constraint.ConstraintLayout>
+            <TextView
+                android:id="@+id/hours_number"
+                style="@style/Text.H1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:text="@{viewModel.totalHours}"
+                android:textColor="@color/secondaryGrey1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.908"
+                app:layout_constraintStart_toEndOf="@+id/time"
+                tools:text="total hours - 5"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc"
+                app:layout_constraintTop_toBottomOf="@+id/status_icon"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </FrameLayout>
 
 
 </layout>

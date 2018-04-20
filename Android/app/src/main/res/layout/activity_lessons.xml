@@ -4,9 +4,10 @@
         xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="viewModel"
-            type="com.midrive.learnerapp.activity.lesson.LessonActivityViewModel" />
+            type="com.midrive.learnerapp.activity.lesson.LessonActivityViewModel"/>
     </data>
 
 
@@ -26,22 +27,29 @@
                 android:id="@+id/toolbar"
                 style="@style/ToolbarStyle"
                 android:theme="@style/ToolbarTheme"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
         </android.support.design.widget.AppBarLayout>
 
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/lessonlist"
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipe_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:clipToPadding="false"
-            android:scrollbars="vertical"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
             app:layout_constraintTop_toBottomOf="@+id/view"
-            app:lessonList_lessonViewModels="@{viewModel.lessonList}"
-            tools:layout_editor_absoluteX="0dp"
-            tools:listitem="@layout/lesson_list_item"/>
+            app:onRefreshListener="@{() -> viewModel.refresh()}">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/lessonlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:scrollbars="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:lessonList_lessonViewModels="@{viewModel.lessonList}"
+                tools:layout_editor_absoluteX="0dp"
+                tools:listitem="@layout/lesson_list_item"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
 
     </android.support.design.widget.CoordinatorLayout>
 </layout>

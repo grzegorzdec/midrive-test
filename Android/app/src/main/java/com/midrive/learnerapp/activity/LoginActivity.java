@@ -79,12 +79,7 @@ public class LoginActivity extends BaseActivity
                 .subscribe(new Consumer<User>() {
                     @Override
                     public void accept(User user) throws Exception {
-                        ApiHelper.downloadLessons(mRealm, new ApiHelper.onResponse() {
-                            @Override
-                            public void onCompleate() {
-                                goToNextActivity();
-                            }
-                        });
+                        goToNextActivity();
                     }
                 }, new Consumer<Throwable>() {
                     @Override

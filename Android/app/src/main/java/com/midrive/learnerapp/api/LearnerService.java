@@ -1,7 +1,6 @@
 package com.midrive.learnerapp.api;
 
 import com.midrive.learnerapp.model.Lesson;
-import com.midrive.learnerapp.model.LessonList;
 import com.midrive.learnerapp.model.Login;
 import com.midrive.learnerapp.model.User;
 

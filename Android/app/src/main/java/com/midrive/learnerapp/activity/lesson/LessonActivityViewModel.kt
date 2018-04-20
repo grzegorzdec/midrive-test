@@ -2,16 +2,17 @@ package com.midrive.learnerapp.activity.lesson
 
 import android.databinding.BaseObservable
 import android.databinding.Bindable
+import com.midrive.learnerapp.api.ApiHelper
 import com.midrive.learnerapp.model.Lesson
 import com.midrive.learnerapp.repository.Repository
 import com.midrive.learnerapp.utils.observableListOf
 
-class LessonActivityViewModel(private val repository: Repository) : BaseObservable() {
+class LessonActivityViewModel(private val repository: Repository, private val refreshStatus: RefreshStatus) : BaseObservable(), ApiHelper.onResponse {
 
     @Bindable
     var lessonList = observableListOf<LessonViewModel>()
 
-    private fun fetchLessonList() {
+    private fun loadLessonList() {
         lessonList.clear()
         val elements = repository.getLessons().map { it.toViewModel() }
         lessonList.addAll(elements)
@@ -20,6 +21,13 @@ class LessonActivityViewModel(private val repository: Repository) : BaseObservab
     private fun Lesson.toViewModel() = LessonViewModel(this)
 
     fun refresh() {
-        fetchLessonList()
+        refreshStatus.refreshStated()
+        ApiHelper.downloadLessons(repository, this)
     }
+
+    override fun onCompleate() {
+        loadLessonList()
+        refreshStatus.refreshEnded()
+    }
+
 }
