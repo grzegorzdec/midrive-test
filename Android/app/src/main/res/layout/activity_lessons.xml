@@ -50,7 +50,7 @@
                 app:layout_behavior="@string/appbar_scrolling_view_behavior"
                 app:lessonList_lessonViewModels="@{viewModel.lessonList}"
                 tools:layout_editor_absoluteX="0dp"
-                tools:listitem="@layout/lesson_list_item"/>
+                tools:listitem="@layout/lesson_list_content_item"/>
         </android.support.v4.widget.SwipeRefreshLayout>
 
     </LinearLayout>

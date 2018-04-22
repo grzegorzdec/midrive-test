@@ -7,7 +7,7 @@ import com.midrive.learnerapp.helper.date.ISO8601
 import com.midrive.learnerapp.model.Lesson
 import com.midrive.learnerapp.model.isComplete
 
-class LessonViewModel(val lesson: Lesson) : BaseObservable() {
+class LessonContentViewModel(val lesson: Lesson) : BaseObservable() {
 
     @get:Bindable
     val date

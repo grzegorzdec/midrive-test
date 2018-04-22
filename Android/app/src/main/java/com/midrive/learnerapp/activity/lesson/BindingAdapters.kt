@@ -8,7 +8,7 @@ import android.support.v7.widget.RecyclerView
 import android.widget.TextView
 
 @BindingAdapter("lessonList_lessonViewModels")
-internal fun RecyclerView._bindLessonViewModel(viewModels: ObservableList<LessonViewModel>?) {
+internal fun RecyclerView._bindLessonViewModel(viewModels: ObservableList<LessonListAdapterItem>?) {
     if(layoutManager == null) {
         layoutManager = LinearLayoutManager(context)
     }
@@ -23,9 +23,4 @@ internal fun RecyclerView._bindLessonViewModel(viewModels: ObservableList<Lesson
 @BindingAdapter("android:src")
 fun setImageResource(imageView: AppCompatImageView, resource: Int) {
     imageView.setImageResource(resource)
-}
-
-@BindingAdapter("android:textColor")
-fun setTextColor(textView: TextView, resource: Int) {
-    textView.setTextColor(resource)
 }
